@@ -1,0 +1,121 @@
+/* Base: Reseteo y Tipografía */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Fondo muy claro */
+    color: #333; /* Texto oscuro */
+}
+
+/* --- Encabezado y Navegación --- */
+.navbar {
+    background-color: #74F27D; /* Color primario azul brillante */
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los elementos del menú horizontalmente */
+    justify-content: center; /* Centra los enlaces */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white; /* Texto blanco para contraste */
+    text-decoration: none; /* Quitar el subrayado */
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+
+/* --- Contenido Principal y Título Grande --- */
+.content {
+    max-width: 1000px;
+    margin: 40px auto; /* Centra el contenido y añade espacio */
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3em; /* Texto grande y audaz */
+    color: #418546; /* Mismo color azul que el menú */
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ccc; /* Línea de separación */
+    padding-bottom: 10px;
+}
+
+/* --- Sección de Imagen y Texto --- */
+.hero-section {
+    display: flex; /* Utiliza Flexbox para la disposición */
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 30px; /* Espacio entre la imagen y el texto */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más pronunciada */
+}
+
+.hero-image {
+    width: 40%; /* La imagen ocupa el 40% del espacio */
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Asegura que la imagen se vea bien */
+}
+
+.hero-text {
+    width: 60%; /* El texto ocupa el 60% restante */
+    font-size: 1.25em; /* Texto legible y destacado */
+    line-height: 1.6;
+}
+
+.hero-text strong {
+    color: #dc3545; /* Resaltar palabras clave con un color secundario (rojo) */
+}
+
+/* --- Pie de Página (Footer) --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Fondo oscuro */
+    color: white;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Adaptación para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        text-align: center;
+    }
+
+    .hero-image, .hero-text {
+        width: 100%; /* Ocupan todo el ancho en móviles */
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del título */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}

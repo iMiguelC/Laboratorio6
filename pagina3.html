@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web con Diseño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Página 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cta-button-container">
+        <a href="index.html" class="cta-button">Ir a Menu principal</a>
+    </div>
+
+    <main class="content">
+        
+        <h1>Pagina 3</h1>
+
+        <div class="tabs-container my-5 shadow-lg p-4 rounded bg-white">
+            <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Concepto 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Concepto 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Concepto 3</button>
+                </li>
+            </ul>
+
+            <div class="tab-content pt-3" id="myTabContent">
+                
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <p class="paragraph-text-small">
+                                **Párrafo 1:** Las pestañas son excelentes para presentar grandes cantidades de información de manera compacta. En lugar de forzar al usuario a desplazarse, pueden hacer clic en la pestaña que les interese, revelando solo el contenido relevante en ese momento. Esto mejora significativamente la **experiencia de usuario (UX)** y la organización visual.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="img1.jpg" class="img-fluid rounded-3 tab-img" alt="Imagen Pestaña 1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-md-8">
+                            <p class="paragraph-text-small">
+                                **Párrafo 2:** Este componente asegura que los **tres párrafos** y las **tres imágenes** se incluyan sin saturar la vista inicial. Cada pestaña contiene un párrafo y una imagen, demostrando cómo se pueden emparejar elementos de texto y visuales de forma modular dentro de la interfaz.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="imagen9.jpg" class="img-fluid rounded-3 tab-img" alt="Imagen Pestaña 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <p class="paragraph-text-small">
+                                **Párrafo 3:** La clave es mantener la **consistencia del diseño**. Al igual que en las páginas anteriores, la barra de navegación y el pie de página son idénticos, ofreciendo una sensación de unidad en todo el sitio web, mientras que los componentes de Bootstrap (Carrusel, Acordeón y ahora Pestañas) añaden funcionalidad única a cada página.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img src="imagen10.jpg" class="img-fluid rounded-3 tab-img" alt="Imagen Pestaña 3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

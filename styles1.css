@@ -1,0 +1,109 @@
+/* Base: Reseteo y Tipografía (Mantenido) */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Encabezado y Navegación (Mantenido) */
+.navbar {
+    background-color: #74F27D;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Botón (Mantenido) */
+.cta-button-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido Principal y Título Grande (Mantenido) */
+.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #74F27D;
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* --- NUEVOS ESTILOS PARA ADAPTAR COMPONENTES --- */
+
+/* Estilo para los párrafos, haciéndolos más legibles */
+.paragraph-text {
+    font-size: 1.15em;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-left: 5px solid #74F27D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Altura fija para las imágenes del carrusel */
+.carousel-img {
+    height: 350px; /* Altura fija para que el carrusel no salte */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio */
+    border-radius: 8px;
+}
+
+/* Estilo para la imagen dentro de la Card de Bootstrap */
+.card-img-custom {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo para la Card */
+.bootstrap-card {
+    border: none; /* Eliminar el borde por defecto de Bootstrap */
+}
+
+/* Pie de Página (Footer) (Mantenido) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Media Query (Responsivo) */
+@media (max-width: 768px) {
+    /* ... (Estilos responsivos anteriores) ... */
+    .carousel-img {
+        height: 200px; /* Menor altura en móviles */
+    }
+}
